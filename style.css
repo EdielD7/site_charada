@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* CABEÇALHO */
 header {
     padding: 16px 0;
     background-color: #191919;
@@ -26,33 +27,111 @@ header li a:hover {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+    padding: 32px 32px;
 }
 
-header .container {
+header .container,
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+section p,
+section li,
+section blockquote {
+    font-size: 18px;
+}
+
+h2 {
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+section p,
+section li {
+    text-align: justify;
+}
+/* SEÇÃO SOBRE */
 #sobre {
     background-color: #dcdcdc;
 }
 
-#sobre .container {
-    display: flex;
+section .container {
+    align-items: flex-start;
 }
 
 #sobre .container img {
-    margin-right: 32px;
-}
-
-#sobre .container h2 {
-    margin: 32px 0 16px 0;
+    margin-right: 16px;
 }
 
 #sobre p {
     margin-bottom: 8px;
+}
+
+/* SEÇÃO HABILIDADES */
+#skills {
+    background-color: #c4ddb3;
+}
+
+#skills .textarea {
+    margin-right: 16px;
+}
+
+#skills .container img {
+    margin-left: 16px;
+}
+
+#skills li {
+    padding-left: 16px;
+    list-style-position: inside;
+}
+
+#skills p {
+    margin-bottom: 8px;
+}
+
+/* SEÇÃO SUA VEZ */
+#riddle {
+    background-color: #191919;
+    color: #dcdcdc;
+}
+
+#riddle .container {
+    flex-wrap: wrap;
+}
+
+#riddle .textarea {
+    max-width: 300px;
+    width: 100%;
+    margin-right: 16px;
+}
+
+#riddle p {
+    margin-bottom: 16px;
+}
+
+#riddle h3,
+blockquote {
+    margin: 0 16px;
+    text-align: center;
+}
+
+#riddle img {
+    height: 300px;
+    margin: 0 16px;
+}
+
+#riddle .form {
+    max-width: 300px;
+    display: block;
+    margin-left: 16px;
+}
+
+#riddle .form textarea,
+#riddle .form input {
+    width: 300px;
 }
