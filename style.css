@@ -4,11 +4,26 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(images/bg-white.jpg);
+}
+
+/* Possíveis fontes google: Coda, Goldman, Oxanium, Special Elite */
+
+h1, h2, h3 {
+    font-family: 'Goldman', cursive;
+    font-weight: 400;
+}
+
+p, blockquote, li {
+    font-family: 'Coda', cursive;
+}
+
 /* CABEÇALHO */
 header {
     padding: 16px 0;
     background-color: #191919;
-    color: #30e40b;
+    color: #57ad45;
 }
 
 header nav li {
@@ -18,12 +33,12 @@ header nav li {
 }
 
 header li a {
-    color: #30e40b;
+    color: #57ad45;
     text-decoration: none;
 }
 
 header li a:hover {
-    text-decoration: underline;
+    color:#2bff00;
 }
 
 .container {
@@ -48,7 +63,7 @@ section blockquote {
 
 h2 {
     margin-bottom: 16px;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 section p,
@@ -56,12 +71,12 @@ section li {
     text-align: justify;
 }
 /* SEÇÃO SOBRE */
-#sobre {
-    background-color: #dcdcdc;
-}
-
 section .container {
     align-items: flex-start;
+}
+
+#sobre .container {
+    background-color: #dcdcdc;
 }
 
 #sobre .container img {
@@ -73,8 +88,8 @@ section .container {
 }
 
 /* SEÇÃO HABILIDADES */
-#skills {
-    background-color: #c4ddb3;
+#skills .container {
+    background-color: #bdd2b0;
 }
 
 #skills .textarea {
@@ -96,12 +111,13 @@ section .container {
 
 /* SEÇÃO SUA VEZ */
 #riddle {
-    background-color: #191919;
+    background-image: url(images/bg-black.jpg);
     color: #dcdcdc;
 }
 
 #riddle .container {
     flex-wrap: wrap;
+    background: rgba(25, 25, 25, 0.8) ;
 }
 
 #riddle .textarea {
@@ -134,4 +150,9 @@ blockquote {
 #riddle .form textarea,
 #riddle .form input {
     width: 300px;
+}
+
+/* SEÇÃO CONTATO */
+#contact .container {
+    background-color: #dcdcdc;
 }
